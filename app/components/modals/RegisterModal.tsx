@@ -58,7 +58,11 @@ const RegisterModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading title="Welcome to CouchBnb" subtitle="Create an account!" />
+      <Heading
+        title="Welcome to CouchBnb"
+        subtitle="Create an account!"
+        center
+      />
       <Input
         id="email"
         label="Email"
@@ -109,19 +113,18 @@ const RegisterModal = () => {
           mt-4 
           font-light
         ">
-        <p>
-          Already have an account?
+        <div className="justify-center flex flex-row items-center gap-2">
+          <p>Already have an account? </p>
           <span
-            onClick={() => {}}
+            onClick={registerModal.onClose}
             className="
               text-neutral-800
               cursor-pointer 
               hover:underline
             ">
-            {" "}
             Log in
           </span>
-        </p>
+        </div>
       </div>
     </div>
   );

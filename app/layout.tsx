@@ -9,7 +9,7 @@ import ToasterProvider from "./providers/ToasterProvider";
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Couchbnb",
+  title: "Holiday Homes & Condo Rentals - CouchBnb",
   description: "Couchbnb",
 };
 
